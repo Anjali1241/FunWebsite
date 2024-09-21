@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes rain {
+  0% {
+    transform: translateY(-100%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+.ribbon {
+  position: absolute;
+  width: 10px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  background: linear-gradient(to right, #ff4e50, #fc913a);
+  opacity: 0.8;
+  animation: rain 3s linear infinite;
+}
+
+/* Positioning ribbons randomly with angles */
+.ribbon-0 { left: 10%; animation-delay: 0s; transform: rotate(-10deg); }
+.ribbon-1 { left: 20%; animation-delay: 0.5s; transform: rotate(15deg); }
+.ribbon-2 { left: 30%; animation-delay: 1s; transform: rotate(-5deg); }
+.ribbon-3 { left: 40%; animation-delay: 1.5s; transform: rotate(10deg); }
+.ribbon-4 { left: 50%; animation-delay: 2s; transform: rotate(-15deg); }
+.ribbon-5 { left: 60%; animation-delay: 0.2s; transform: rotate(5deg); }
+.ribbon-6 { left: 70%; animation-delay: 0.7s; transform: rotate(-20deg); }
+.ribbon-7 { left: 80%; animation-delay: 1.2s; transform: rotate(10deg); }
+.ribbon-8 { left: 90%; animation-delay: 1.8s; transform: rotate(-5deg); }
+.ribbon-9 { left: 15%; animation-delay: 0.3s; transform: rotate(20deg); }
+.ribbon-10 { left: 25%; animation-delay: 0.9s; transform: rotate(-10deg); }
+.ribbon-11 { left: 35%; animation-delay: 1.4s; transform: rotate(15deg); }
+.ribbon-12 { left: 45%; animation-delay: 2.1s; transform: rotate(-10deg); }
+.ribbon-13 { left: 55%; animation-delay: 0.4s; transform: rotate(5deg); }
+.ribbon-14 { left: 65%; animation-delay: 0.8s; transform: rotate(-15deg); }
+.ribbon-15 { left: 75%; animation-delay: 1.5s; transform: rotate(10deg); }
+.ribbon-16 { left: 85%; animation-delay: 2.3s; transform: rotate(-20deg); }
+.ribbon-17 { left: 5%; animation-delay: 1.0s; transform: rotate(5deg); }
+.ribbon-18 { left: 95%; animation-delay: 2.0s; transform: rotate(-10deg); }
+.ribbon-19 { left: 12%; animation-delay: 1.3s; transform: rotate(15deg); }
+
+button:disabled {
+  background-color: #ccc; /* Gray color */
+  cursor: not-allowed;
+}
