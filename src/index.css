@@ -13,8 +13,8 @@
 
 .ribbon {
   position: absolute;
-  width: 10px; /* Adjust width as needed */
-  height: 30px; /* Adjust height as needed */
+  width: 10px; 
+  height: 30px; 
   background: linear-gradient(to right, #ff4e50, #fc913a);
   opacity: 0.8;
   animation: rain 3s linear infinite;
@@ -43,6 +43,6 @@
 .ribbon-19 { left: 12%; animation-delay: 1.3s; transform: rotate(15deg); }
 
 button:disabled {
-  background-color: #ccc; /* Gray color */
+  background-color: #ccc; 
   cursor: not-allowed;
 }

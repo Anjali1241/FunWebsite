@@ -16,7 +16,6 @@ function HomePage() {
 
   return (
     <div className="relative flex flex-col items-center justify-center h-screen bg-gradient-to-r from-sky-500 to-indigo-500 overflow-hidden">
-      {/* Raining Ribbon Effect */}
       {showRibbons && (
         <div className="absolute inset-0 pointer-events-none">
           {Array.from({ length: 20 }).map((_, index) => (
@@ -27,7 +26,7 @@ function HomePage() {
 
       <div className="text-5xl italic font-extrabold text-white z-10">
         {showNoMessage
-          ? "You don't have any options"
+          ? "You don't have any option"
           : showRibbons
           ? "Can't wait to see you!!!"
           : "Wanna go out with me?"}
@@ -47,7 +46,7 @@ function HomePage() {
         <button
           className="m-4 bg-red-600 px-5 py-2 rounded-md cursor-help "
           onClick={handleNoResponse}
-          disabled={showRibbons} // Disable NO button if ribbons are shown
+          disabled={showRibbons}
         >
           NO
         </button>
