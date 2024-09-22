@@ -44,7 +44,7 @@ function HomePage() {
           YES
         </button>
         <button
-          className="m-4 bg-red-600 px-5 py-2 rounded-md cursor-help "
+          className="m-4 bg-red-600 px-5 py-2 rounded-md cursor-help"
           onClick={handleNoResponse}
           disabled={showRibbons}
         >
