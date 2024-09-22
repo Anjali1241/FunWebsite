@@ -32,7 +32,7 @@ function HomePage() {
           : "Wanna go out with me?"}
       </div>
       <img
-        src={showNoMessage ? "public/noOption.gif" : showRibbons ? "public/hug.gif" : "public/excited.gif"}
+        src={showNoMessage ? "/noOption.gif" : showRibbons ? "/hug.gif" : "/excited.gif"}
         className="m-5"
         alt={showNoMessage ? "Sad" : showRibbons ? "Hug" : "Excited"}
       />
